@@ -1,34 +1,29 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import { useState } from 'react'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+import { Toaster } from 'react-hot-toast'
+import Home from './pages/home'
+import News from './pages/news'
+import Post from './component/post'
+import AdminLogin from './pages/admin/AdminLogin'
+import Dashboard from './pages/admin/dashboard'
+import CreatePost from './pages/admin/createPost'
+
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <Router>
+      <Routes>
+        <Route path='/' element={<Home/>} />
+        <Route path='/news' element={<News/>} />
+        <Route path='/admin-login' element={<AdminLogin/>} />
+        <Route path='/dashboard' element={<Dashboard/>} />
+        
+        <Route path='/post' element={<Post/>} />
+        <Route path='/create-post' element={<CreatePost/>} />
+      </Routes>
+    </Router>
   )
 }
 
