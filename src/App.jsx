@@ -1,7 +1,11 @@
 import './App.css'
 import { useState } from 'react'
+
+//Import Packages
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import { Toaster } from 'react-hot-toast'
+
+//Import Pages
 import Home from './pages/home'
 import News from './pages/news'
 import Post from './component/post'
