@@ -13,7 +13,6 @@ import AdminLogin from './pages/admin/AdminLogin'
 import Dashboard from './pages/admin/dashboard'
 import CreatePost from './pages/admin/createPost'
 
-
 function App() {
 
   return (
@@ -23,7 +22,6 @@ function App() {
         <Route path='/news' element={<News/>} />
         <Route path='/admin-login' element={<AdminLogin/>} />
         <Route path='/dashboard' element={<Dashboard/>} />
-        
         <Route path='/post' element={<Post/>} />
         <Route path='/create-post' element={<CreatePost/>} />
       </Routes>
