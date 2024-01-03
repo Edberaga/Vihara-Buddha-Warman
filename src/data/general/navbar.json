@@ -1,0 +1,46 @@
+{
+    "id": "menu-data",
+    "section": "menu",
+    "menu": [
+        {
+            "id": "menu-1",
+            "text": "Home",
+            "link": "/"
+        },
+        {
+            "id": "menu-2",
+            "text": "Tentang",
+            "link": "/tentang"
+        },
+        {
+            "id": "menu-3",
+            "text": "Dana",
+            "link": "/dana"
+        },
+        {
+            "id": "menu-4",
+            "text": "Volunter",
+            "link": "/volunter"
+        },
+        {
+            "id": "menu-5",
+            "text": "Artikel",
+            "link": "/artikel"
+        },
+        {
+            "id": "menu-6",
+            "text": "Acara",
+            "link": "/acara"
+        },
+        {
+            "id": "menu-7",
+            "text": "Galleri",
+            "link": "/galleri"
+        },
+        {
+            "id": "menu-8",
+            "text": "Contact",
+            "link": "/contact"
+        }
+    ]
+}
